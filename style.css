@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(250, 128, 114, 0.5), rgba(250, 128, 114, 0.2)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display:flex;
+    padding: 0.5% 5%;
+    justify-content: space-between;
+    align-items: center;
+    right: 0%;
+    left: 0%;
+    background-image: linear-gradient(to right, #FA8072, #FA8072, #FA8072);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 2%;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.text-box{
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.text-box h1{
+    font-size: 140px;
+}
+
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 28px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    left: 0.5%;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid #FA8072;
+    background: #FA8072;
+    transition: 1s;
+    
+}
+
+#foto{
+    border-radius: 50%;
+    width: 20%;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    filter: drop-shadow(0px 1px 4px rgb(100, 100, 100));
+}
+
+nav .fa{
+    display: none;
+}
+
+.hea{
+    margin-bottom: 200px;
+}
+
+.cour{
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 120px;
+    position: relative;
+}
+
+.txt{
+    width: 70%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    justify-content: center;
+}
+
+.txt h3{
+    text-align: center;
+    font-weight:600;
+    margin: 10px 0;
+    color: black;
+}
+
+.cour h1{
+    text-align: center;
+    font-size: 54px;
+    color: black;
+    margin: auto;
+}
+
+.cour h2{
+    color: black;
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: 14px;
+}
+
+.cour p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 1.8;
+    padding: 10px;
+}
+
+.cour img{
+    border-radius: 10px;
+    padding-bottom: 780px;
+    width: 22%;
+    filter: drop-shadow(2px 2px 4px rgb(100, 100, 100, 0.3));
+    display: block;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cour-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom:5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.cour-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+
+.kam{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 132px;
+}
+
+.kam h1{
+    font-size: 54px;
+}
+
+.kam h3{
+    font-weight: 400;
+}
+
+.skill{
+    background-color: #FA8072;
+    width: 40%;
+    position: inline;
+    left: 29.7%;
+}
+
+.coll{
+    float: left;
+}
+
+.kam-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    bottom: 40px;
+}
+
+.kam-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(250, 128, 114, 0.7); /*warna merah dengan opacity 0.7*/
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.faci{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.faci h1{
+    font-size: 54px;
+}
+
+.faci h3{
+    font-size: 30px;
+}
+
+.faci-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.faci-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.faci-col p{
+    padding: 0;
+}
+
+.faci-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.portfolio{
+    width: 40%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.portfolio h1{
+    font-size: 54px;
+}
+
+.portfolio img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio h3{
+    font-size: 30px;
+    text-align: left;
+}
+
+.portfolio p{
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+.com{
+    display:flex;
+    padding: 0.5% 10%;
+    justify-content: space-between;
+    align-items: center;
+    right: 40%;
+    left: 40%;
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    background-color: #777;
+    color: white;
+}
+
+.footer h3{
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.footer h2{
+    padding-top: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+textarea, input, button{
+    overflow: auto;
+    float: left;
+    border-radius: 10px;
+    margin: 4px 8px;    
+    padding: 8px;
+    border: none;
+    width: 160px;
+    display: block;
+    outline: none;
+}
+
+button{
+    background-color: rgba(250, 128, 114, 1);
+    color: white;
+    width: 178px;
+    margin-top: 32px;
+    cursor: pointer;
+    display: block;
+}
+
+textarea{
+    height: 20px;
+}
+
+.col i{
+    padding-top: 34px;
+    padding-left: 100px;
+    color: white;
+    top: 50px;
+}
